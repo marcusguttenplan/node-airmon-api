@@ -17,4 +17,9 @@ View live at [tag.impracticalapplications.com](http://tag.impracticalapplication
 npm install
 ```
 
+## TODO
+* Send RSSI signal strength through API
+* Execute bash scripts on beaglebone from web button
+
+## Thanks
 Thank you to Derek Rushforth.

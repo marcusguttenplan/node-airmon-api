@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>Reality Versioning</title>
+	<link type="text/css" rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+	<header>
+		<h1>Reality Versioning</h1>
+	</header>
+
+	<div class="container">
+		<div id="data-visual"></div>
+		<div id="street-view"></div>
+		<div id="satellite-view"></div>
+	</div>
+	
+
+	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7LVfAV4D7h3Y8QH7aZu8yW9oLbKNB-Zs"></script>-->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/firebase.js"></script>
+	<script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="assets/js/libs/d3/d3.geom.js"></script>
+	<script type="text/javascript" src="assets/js/libs/d3/d3.layout.js"></script>
+	<script type="text/javascript" src="assets/js/libs/CodeFlower.js"></script>
+	<script type="text/javascript" src="assets/js/dataConverter.js"></script>
+
+	<script type="text/javascript" src="assets/js/site.js"></script>
+
+	<script type="text/javascript">
+		var options = {
+			data: 'assets/js/data/static.json'
+		};
+
+		$(document).ready(Site.init(options));
+	</script>
+</body>
+</html>

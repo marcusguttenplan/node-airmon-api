@@ -1,0 +1,919 @@
+{
+  "detection-run": {
+    "kismet-version": "airodump-ng-1.0",
+    "start-time": "Sun Feb 22 04:41:51 2015",
+    "wireless-network": [
+      {
+        "number": 1,
+        "type": "infrastructure",
+        "first-time": "Sun Feb 22 04:42:18 2015",
+        "last-time": "Sun Feb 22 05:02:04 2015",
+        "SSID": {
+          "first-time": "Sun Feb 22 04:42:18 2015",
+          "last-time": "Sun Feb 22 05:02:04 2015",
+          "type": "Beacon",
+          "max-rate": 54.00002,
+          "packets": 10,
+          "beaconrate": 10,
+          "encryption": "WPA2 BES-CCM",
+          "essid": {
+            "cloaked": false,
+            "$t": "HP-Print-93-Officejet Pro 6830"
+          }
+        },
+        "BSSID": "34:64:A9:08:A3:93",
+        "manuf": "Unknown",
+        "channel": 11,
+        "freqmhz": "2462 11",
+        "maxseenrate": 54000,
+        "packets": {
+          "LLC": 10,
+          "data": 0,
+          "crypt": 0,
+          "total": 11,
+          "fragments": 0,
+          "retries": 0
+        },
+        "datasize": 0,
+        "snr-info": {
+          "last_signal_dbm": -85,
+          "last_noise_dbm": 0,
+          "last_signal_rssi": -85,
+          "last_noise_rssi": 0,
+          "min_signal_dbm": -85,
+          "min_noise_dbm": 0,
+          "min_signal_rssi": 1024,
+          "min_noise_rssi": 1024,
+          "max_signal_dbm": -85,
+          "max_noise_dbm": 0,
+          "max_signal_rssi": -85,
+          "max_noise_rssi": 0
+        },
+        "bsstimestamp": 0,
+        "cdp-device": {},
+        "cdp-portid": {}
+      },
+      {
+        "number": 2,
+        "type": "infrastructure",
+        "first-time": "Sun Feb 22 04:44:01 2015",
+        "last-time": "Sun Feb 22 04:48:26 2015",
+        "SSID": {
+          "first-time": "Sun Feb 22 04:44:01 2015",
+          "last-time": "Sun Feb 22 04:48:26 2015",
+          "type": "DEREK",
+          "max-rate": -1,
+          "packets": 0,
+          "beaconrate": 10,
+          "encryption": "WPA",
+          "essid": {
+            "cloaked": true
+          }
+        },
+        "BSSID": "10:5F:06:5B:EB:64",
+        "manuf": "Unknown",
+        "channel": 158,
+        "freqmhz": "5790 2",
+        "maxseenrate": -1000,
+        "packets": {
+          "LLC": 0,
+          "data": 2,
+          "crypt": 0,
+          "total": 2,
+          "fragments": 0,
+          "retries": 0
+        },
+        "datasize": 0,
+        "wireless-client": {
+          "number": 1,
+          "type": "established",
+          "first-time": "Sun Feb 22 04:44:01 2015",
+          "last-time": "Sun Feb 22 04:56:20 2015",
+          "client-mac": "60:02:B4:E4:92:E5",
+          "client-manuf": "Unknown",
+          "channel": 158,
+          "maxseenrate": 1,
+          "packets": {
+            "LLC": 0,
+            "data": 0,
+            "crypt": 0,
+            "total": 4,
+            "fragments": 0,
+            "retries": 0
+          },
+          "snr-info": {
+            "last_signal_dbm": -79,
+            "last_noise_dbm": 0,
+            "last_signal_rssi": -79,
+            "last_noise_rssi": 0,
+            "min_signal_dbm": -79,
+            "min_noise_dbm": 0,
+            "min_signal_rssi": 1024,
+            "min_noise_rssi": 1024,
+            "max_signal_dbm": -79,
+            "max_noise_dbm": 0,
+            "max_signal_rssi": -79,
+            "max_noise_rssi": 0
+          },
+          "cdp-device": {},
+          "cdp-portid": {}
+        },
+        "snr-info": {
+          "last_signal_dbm": 0,
+          "last_noise_dbm": 0,
+          "last_signal_rssi": 0,
+          "last_noise_rssi": 0,
+          "min_signal_dbm": 0,
+          "min_noise_dbm": 0,
+          "min_signal_rssi": 1024,
+          "min_noise_rssi": 1024,
+          "max_signal_dbm": 0,
+          "max_noise_dbm": 0,
+          "max_signal_rssi": 0,
+          "max_noise_rssi": 0
+        },
+        "bsstimestamp": 0,
+        "cdp-device": {},
+        "cdp-portid": {}
+      },
+      {
+        "number": 3,
+        "type": "infrastructure",
+        "first-time": "Sun Feb 22 04:42:41 2015",
+        "last-time": "Sun Feb 22 04:57:43 2015",
+        "SSID": {
+          "first-time": "Sun Feb 22 04:42:41 2015",
+          "last-time": "Sun Feb 22 04:57:43 2015",
+          "type": "Beacon",
+          "max-rate": 54,
+          "packets": 12,
+          "beaconrate": 10,
+          "encryption": "WPA2 AES-CCM",
+          "essid": {
+            "cloaked": false,
+            "$t": "vega1562"
+          }
+        },
+        "BSSID": "30:91:8F:5C:C6:7C",
+        "manuf": "Unknown",
+        "channel": 11,
+        "freqmhz": "2462 13",
+        "maxseenrate": 54000,
+        "packets": {
+          "LLC": 12,
+          "data": 0,
+          "crypt": 0,
+          "total": 13,
+          "fragments": 0,
+          "retries": 0
+        },
+        "datasize": 0,
+        "snr-info": {
+          "last_signal_dbm": -86,
+          "last_noise_dbm": 0,
+          "last_signal_rssi": -86,
+          "last_noise_rssi": 0,
+          "min_signal_dbm": -86,
+          "min_noise_dbm": 0,
+          "min_signal_rssi": 1024,
+          "min_noise_rssi": 1024,
+          "max_signal_dbm": -86,
+          "max_noise_dbm": 0,
+          "max_signal_rssi": -86,
+          "max_noise_rssi": 0
+        },
+        "bsstimestamp": 0,
+        "cdp-device": {},
+        "cdp-portid": {}
+      },
+      {
+        "number": 4,
+        "type": "infrastructure",
+        "first-time": "Sun Feb 22 04:43:20 2015",
+        "last-time": "Sun Feb 22 04:57:44 2015",
+        "SSID": {
+          "first-time": "Sun Feb 22 04:43:20 2015",
+          "last-time": "Sun Feb 22 04:57:44 2015",
+          "type": "Beacon",
+          "max-rate": 54,
+          "packets": 7,
+          "beaconrate": 10,
+          "encryption": "WPA2 WPA AES-CCM TKIP",
+          "essid": {
+            "cloaked": false,
+            "$t": "Petersen"
+          }
+        },
+        "BSSID": "10:5F:06:37:5A:B4",
+        "manuf": "Unknown",
+        "channel": 1,
+        "freqmhz": "2412 9",
+        "maxseenrate": 54000,
+        "packets": {
+          "LLC": 7,
+          "data": 0,
+          "crypt": 0,
+          "total": 9,
+          "fragments": 0,
+          "retries": 0
+        },
+        "datasize": 0,
+        "wireless-client": {
+          "number": 1,
+          "type": "established",
+          "first-time": "Sun Feb 22 04:43:20 2015",
+          "last-time": "Sun Feb 22 04:43:20 2015",
+          "client-mac": "28:9A:FA:10:01:42",
+          "client-manuf": "Unknown",
+          "channel": 1,
+          "maxseenrate": 1,
+          "packets": {
+            "LLC": 0,
+            "data": 0,
+            "crypt": 0,
+            "total": 1,
+            "fragments": 0,
+            "retries": 0
+          },
+          "snr-info": {
+            "last_signal_dbm": -83,
+            "last_noise_dbm": 0,
+            "last_signal_rssi": -83,
+            "last_noise_rssi": 0,
+            "min_signal_dbm": -83,
+            "min_noise_dbm": 0,
+            "min_signal_rssi": 1024,
+            "min_noise_rssi": 1024,
+            "max_signal_dbm": -83,
+            "max_noise_dbm": 0,
+            "max_signal_rssi": -83,
+            "max_noise_rssi": 0
+          },
+          "cdp-device": {},
+          "cdp-portid": {}
+        },
+        "snr-info": {
+          "last_signal_dbm": -84,
+          "last_noise_dbm": 0,
+          "last_signal_rssi": -84,
+          "last_noise_rssi": 0,
+          "min_signal_dbm": -84,
+          "min_noise_dbm": 0,
+          "min_signal_rssi": 1024,
+          "min_noise_rssi": 1024,
+          "max_signal_dbm": -84,
+          "max_noise_dbm": 0,
+          "max_signal_rssi": -84,
+          "max_noise_rssi": 0
+        },
+        "bsstimestamp": 0,
+        "cdp-device": {},
+        "cdp-portid": {}
+      },
+      {
+        "number": 5,
+        "type": "infrastructure",
+        "first-time": "Sun Feb 22 04:42:37 2015",
+        "last-time": "Sun Feb 22 05:02:00 2015",
+        "SSID": {
+          "first-time": "Sun Feb 22 04:42:37 2015",
+          "last-time": "Sun Feb 22 05:02:00 2015",
+          "type": "Beacon",
+          "max-rate": 54,
+          "packets": 64,
+          "beaconrate": 10,
+          "encryption": "OPN",
+          "essid": {
+            "cloaked": false,
+            "$t": "dd-wrt_vap"
+          }
+        },
+        "BSSID": "20:AA:4B:BB:27:09",
+        "manuf": "Unknown",
+        "channel": 6,
+        "freqmhz": "2437 101",
+        "maxseenrate": 54000,
+        "packets": {
+          "LLC": 64,
+          "data": 15,
+          "crypt": 0,
+          "total": 101,
+          "fragments": 0,
+          "retries": 0
+        },
+        "datasize": 0,
+        "snr-info": {
+          "last_signal_dbm": -85,
+          "last_noise_dbm": 0,
+          "last_signal_rssi": -85,
+          "last_noise_rssi": 0,
+          "min_signal_dbm": -85,
+          "min_noise_dbm": 0,
+          "min_signal_rssi": 1024,
+          "min_noise_rssi": 1024,
+          "max_signal_dbm": -85,
+          "max_noise_dbm": 0,
+          "max_signal_rssi": -85,
+          "max_noise_rssi": 0
+        },
+        "bsstimestamp": 0,
+        "cdp-device": {},
+        "cdp-portid": {}
+      },
+      {
+        "number": 6,
+        "type": "infrastructure",
+        "first-time": "Sun Feb 22 04:41:52 2015",
+        "last-time": "Sun Feb 22 05:02:05 2015",
+        "SSID": {
+          "first-time": "Sun Feb 22 04:41:52 2015",
+          "last-time": "Sun Feb 22 05:02:05 2015",
+          "type": "Beacon",
+          "max-rate": 54,
+          "packets": 459,
+          "beaconrate": 10,
+          "encryption": "WPA2 WPA AES-CCM TKIP",
+          "essid": {
+            "cloaked": false,
+            "$t": "TKOnetwork3"
+          }
+        },
+        "BSSID": "10:0D:7F:DB:1B:A5",
+        "manuf": "Unknown",
+        "channel": 1,
+        "freqmhz": "2412 698",
+        "maxseenrate": 54000,
+        "packets": {
+          "LLC": 459,
+          "data": 205,
+          "crypt": 0,
+          "total": 698,
+          "fragments": 0,
+          "retries": 0
+        },
+        "datasize": 0,
+        "wireless-client": {
+          "number": 1,
+          "type": "established",
+          "first-time": "Sun Feb 22 04:42:18 2015",
+          "last-time": "Sun Feb 22 04:55:18 2015",
+          "client-mac": "D0:22:BE:07:7A:D1",
+          "client-manuf": "Unknown",
+          "channel": 1,
+          "maxseenrate": 1,
+          "packets": {
+            "LLC": 0,
+            "data": 0,
+            "crypt": 0,
+            "total": 2,
+            "fragments": 0,
+            "retries": 0
+          },
+          "snr-info": {
+            "last_signal_dbm": 0,
+            "last_noise_dbm": 0,
+            "last_signal_rssi": 0,
+            "last_noise_rssi": 0,
+            "min_signal_dbm": 0,
+            "min_noise_dbm": 0,
+            "min_signal_rssi": 1024,
+            "min_noise_rssi": 1024,
+            "max_signal_dbm": 0,
+            "max_noise_dbm": 0,
+            "max_signal_rssi": 0,
+            "max_noise_rssi": 0
+          },
+          "cdp-device": {},
+          "cdp-portid": {}
+        },
+        "snr-info": {
+          "last_signal_dbm": -80,
+          "last_noise_dbm": 0,
+          "last_signal_rssi": -80,
+          "last_noise_rssi": 0,
+          "min_signal_dbm": -80,
+          "min_noise_dbm": 0,
+          "min_signal_rssi": 1024,
+          "min_noise_rssi": 1024,
+          "max_signal_dbm": -80,
+          "max_noise_dbm": 0,
+          "max_signal_rssi": -80,
+          "max_noise_rssi": 0
+        },
+        "bsstimestamp": 0,
+        "cdp-device": {},
+        "cdp-portid": {}
+      },
+      {
+        "number": 7,
+        "type": "infrastructure",
+        "first-time": "Sun Feb 22 04:41:55 2015",
+        "last-time": "Sun Feb 22 05:02:04 2015",
+        "SSID": {
+          "first-time": "Sun Feb 22 04:41:55 2015",
+          "last-time": "Sun Feb 22 05:02:04 2015",
+          "type": "Beacon",
+          "max-rate": 54,
+          "packets": 357,
+          "beaconrate": 10,
+          "encryption": "WPA2 AES-CCM TKIP",
+          "essid": {
+            "cloaked": false,
+            "$t": "CJAWDJ600"
+          }
+        },
+        "BSSID": "20:10:7A:C6:88:FE",
+        "manuf": "Unknown",
+        "channel": 6,
+        "freqmhz": "2437 510",
+        "maxseenrate": 54000,
+        "packets": {
+          "LLC": 357,
+          "data": 100,
+          "crypt": 0,
+          "total": 510,
+          "fragments": 0,
+          "retries": 0
+        },
+        "datasize": 0,
+        "wireless-client": [
+          {
+            "number": 1,
+            "type": "established",
+            "first-time": "Sun Feb 22 04:42:37 2015",
+            "last-time": "Sun Feb 22 04:42:37 2015",
+            "client-mac": "20:AA:4B:BB:27:09",
+            "client-manuf": "Unknown",
+            "channel": 6,
+            "maxseenrate": 5.5,
+            "packets": {
+              "LLC": 0,
+              "data": 0,
+              "crypt": 0,
+              "total": 1,
+              "fragments": 0,
+              "retries": 0
+            },
+            "snr-info": {
+              "last_signal_dbm": -85,
+              "last_noise_dbm": 0,
+              "last_signal_rssi": -85,
+              "last_noise_rssi": 0,
+              "min_signal_dbm": -85,
+              "min_noise_dbm": 0,
+              "min_signal_rssi": 1024,
+              "min_noise_rssi": 1024,
+              "max_signal_dbm": -85,
+              "max_noise_dbm": 0,
+              "max_signal_rssi": -85,
+              "max_noise_rssi": 0
+            },
+            "cdp-device": {},
+            "cdp-portid": {}
+          },
+          {
+            "number": 2,
+            "type": "established",
+            "first-time": "Sun Feb 22 04:46:43 2015",
+            "last-time": "Sun Feb 22 04:46:43 2015",
+            "client-mac": "CC:6D:A0:0E:73:B1",
+            "client-manuf": "Unknown",
+            "channel": 6,
+            "maxseenrate": 1,
+            "packets": {
+              "LLC": 0,
+              "data": 0,
+              "crypt": 0,
+              "total": 1,
+              "fragments": 0,
+              "retries": 0
+            },
+            "snr-info": {
+              "last_signal_dbm": 0,
+              "last_noise_dbm": 0,
+              "last_signal_rssi": 0,
+              "last_noise_rssi": 0,
+              "min_signal_dbm": 0,
+              "min_noise_dbm": 0,
+              "min_signal_rssi": 1024,
+              "min_noise_rssi": 1024,
+              "max_signal_dbm": 0,
+              "max_noise_dbm": 0,
+              "max_signal_rssi": 0,
+              "max_noise_rssi": 0
+            },
+            "cdp-device": {},
+            "cdp-portid": {}
+          },
+          {
+            "number": 3,
+            "type": "established",
+            "first-time": "Sun Feb 22 04:46:43 2015",
+            "last-time": "Sun Feb 22 04:46:43 2015",
+            "client-mac": "00:18:F8:43:91:5F",
+            "client-manuf": "Unknown",
+            "channel": 6,
+            "maxseenrate": 1,
+            "packets": {
+              "LLC": 0,
+              "data": 0,
+              "crypt": 0,
+              "total": 1,
+              "fragments": 0,
+              "retries": 0
+            },
+            "snr-info": {
+              "last_signal_dbm": 0,
+              "last_noise_dbm": 0,
+              "last_signal_rssi": 0,
+              "last_noise_rssi": 0,
+              "min_signal_dbm": 0,
+              "min_noise_dbm": 0,
+              "min_signal_rssi": 1024,
+              "min_noise_rssi": 1024,
+              "max_signal_dbm": 0,
+              "max_noise_dbm": 0,
+              "max_signal_rssi": 0,
+              "max_noise_rssi": 0
+            },
+            "cdp-device": {},
+            "cdp-portid": {}
+          }
+        ],
+        "snr-info": {
+          "last_signal_dbm": -79,
+          "last_noise_dbm": 0,
+          "last_signal_rssi": -79,
+          "last_noise_rssi": 0,
+          "min_signal_dbm": -79,
+          "min_noise_dbm": 0,
+          "min_signal_rssi": 1024,
+          "min_noise_rssi": 1024,
+          "max_signal_dbm": -79,
+          "max_noise_dbm": 0,
+          "max_signal_rssi": -79,
+          "max_noise_rssi": 0
+        },
+        "bsstimestamp": 0,
+        "cdp-device": {},
+        "cdp-portid": {}
+      },
+      {
+        "number": 8,
+        "type": "infrastructure",
+        "first-time": "Sun Feb 22 04:41:55 2015",
+        "last-time": "Sun Feb 22 05:02:04 2015",
+        "SSID": {
+          "first-time": "Sun Feb 22 04:41:55 2015",
+          "last-time": "Sun Feb 22 05:02:04 2015",
+          "type": "Beacon",
+          "max-rate": 54,
+          "packets": 602,
+          "beaconrate": 10,
+          "encryption": "OPN",
+          "essid": {
+            "cloaked": false,
+            "$t": "Family room"
+          }
+        },
+        "BSSID": "FA:8F:CA:97:CF:6C",
+        "manuf": "Unknown",
+        "channel": 6,
+        "freqmhz": "2437 660",
+        "maxseenrate": 54000,
+        "packets": {
+          "LLC": 602,
+          "data": 0,
+          "crypt": 0,
+          "total": 660,
+          "fragments": 0,
+          "retries": 0
+        },
+        "datasize": 0,
+        "snr-info": {
+          "last_signal_dbm": -40,
+          "last_noise_dbm": 0,
+          "last_signal_rssi": -40,
+          "last_noise_rssi": 0,
+          "min_signal_dbm": -40,
+          "min_noise_dbm": 0,
+          "min_signal_rssi": 1024,
+          "min_noise_rssi": 1024,
+          "max_signal_dbm": -40,
+          "max_noise_dbm": 0,
+          "max_signal_rssi": -40,
+          "max_noise_rssi": 0
+        },
+        "bsstimestamp": 0,
+        "cdp-device": {},
+        "cdp-portid": {}
+      },
+      {
+        "number": 9,
+        "type": "infrastructure",
+        "first-time": "Sun Feb 22 04:41:55 2015",
+        "last-time": "Sun Feb 22 05:02:04 2015",
+        "SSID": {
+          "first-time": "Sun Feb 22 04:41:55 2015",
+          "last-time": "Sun Feb 22 05:02:04 2015",
+          "type": "Beacon",
+          "max-rate": 54,
+          "packets": 703,
+          "beaconrate": 10,
+          "encryption": "WPA2 WPA AES-CCM TKIP",
+          "essid": {
+            "cloaked": false,
+            "$t": "D Plus C"
+          }
+        },
+        "BSSID": "30:46:9A:55:B2:D2",
+        "manuf": "Unknown",
+        "channel": 11,
+        "freqmhz": "2462 1435",
+        "maxseenrate": 54000,
+        "packets": {
+          "LLC": 703,
+          "data": 165,
+          "crypt": 0,
+          "total": 1435,
+          "fragments": 0,
+          "retries": 0
+        },
+        "datasize": 0,
+        "wireless-client": [
+          {
+            "number": 1,
+            "type": "established",
+            "first-time": "Sun Feb 22 04:42:10 2015",
+            "last-time": "Sun Feb 22 05:00:47 2015",
+            "client-mac": "3C:AB:8E:BE:63:25",
+            "client-manuf": "Unknown",
+            "channel": 11,
+            "maxseenrate": 24,
+            "packets": {
+              "LLC": 0,
+              "data": 0,
+              "crypt": 0,
+              "total": 57,
+              "fragments": 0,
+              "retries": 0
+            },
+            "snr-info": {
+              "last_signal_dbm": -73,
+              "last_noise_dbm": 0,
+              "last_signal_rssi": -73,
+              "last_noise_rssi": 0,
+              "min_signal_dbm": -73,
+              "min_noise_dbm": 0,
+              "min_signal_rssi": 1024,
+              "min_noise_rssi": 1024,
+              "max_signal_dbm": -73,
+              "max_noise_dbm": 0,
+              "max_signal_rssi": -73,
+              "max_noise_rssi": 0
+            },
+            "cdp-device": {},
+            "cdp-portid": {}
+          },
+          {
+            "number": 2,
+            "type": "established",
+            "first-time": "Sun Feb 22 04:44:16 2015",
+            "last-time": "Sun Feb 22 05:00:16 2015",
+            "client-mac": "68:9C:70:61:30:58",
+            "client-manuf": "Unknown",
+            "channel": 11,
+            "maxseenrate": 1,
+            "packets": {
+              "LLC": 0,
+              "data": 0,
+              "crypt": 0,
+              "total": 22,
+              "fragments": 0,
+              "retries": 0
+            },
+            "snr-info": {
+              "last_signal_dbm": -79,
+              "last_noise_dbm": 0,
+              "last_signal_rssi": -79,
+              "last_noise_rssi": 0,
+              "min_signal_dbm": -79,
+              "min_noise_dbm": 0,
+              "min_signal_rssi": 1024,
+              "min_noise_rssi": 1024,
+              "max_signal_dbm": -79,
+              "max_noise_dbm": 0,
+              "max_signal_rssi": -79,
+              "max_noise_rssi": 0
+            },
+            "cdp-device": {},
+            "cdp-portid": {}
+          },
+          {
+            "number": 3,
+            "type": "established",
+            "first-time": "Sun Feb 22 04:45:03 2015",
+            "last-time": "Sun Feb 22 05:02:04 2015",
+            "client-mac": "3C:15:C2:C7:3B:44",
+            "client-manuf": "Unknown",
+            "channel": 11,
+            "maxseenrate": 24,
+            "packets": {
+              "LLC": 0,
+              "data": 0,
+              "crypt": 0,
+              "total": 37,
+              "fragments": 0,
+              "retries": 0
+            },
+            "snr-info": {
+              "last_signal_dbm": -67,
+              "last_noise_dbm": 0,
+              "last_signal_rssi": -67,
+              "last_noise_rssi": 0,
+              "min_signal_dbm": -67,
+              "min_noise_dbm": 0,
+              "min_signal_rssi": 1024,
+              "min_noise_rssi": 1024,
+              "max_signal_dbm": -67,
+              "max_noise_dbm": 0,
+              "max_signal_rssi": -67,
+              "max_noise_rssi": 0
+            },
+            "cdp-device": {},
+            "cdp-portid": {}
+          },
+          {
+            "number": 4,
+            "type": "established",
+            "first-time": "Sun Feb 22 04:43:44 2015",
+            "last-time": "Sun Feb 22 04:59:15 2015",
+            "client-mac": "6C:AD:F8:7F:49:59",
+            "client-manuf": "Unknown",
+            "channel": 11,
+            "maxseenrate": 1,
+            "packets": {
+              "LLC": 0,
+              "data": 0,
+              "crypt": 0,
+              "total": 36,
+              "fragments": 0,
+              "retries": 0
+            },
+            "snr-info": {
+              "last_signal_dbm": -69,
+              "last_noise_dbm": 0,
+              "last_signal_rssi": -69,
+              "last_noise_rssi": 0,
+              "min_signal_dbm": -69,
+              "min_noise_dbm": 0,
+              "min_signal_rssi": 1024,
+              "min_noise_rssi": 1024,
+              "max_signal_dbm": -69,
+              "max_noise_dbm": 0,
+              "max_signal_rssi": -69,
+              "max_noise_rssi": 0
+            },
+            "cdp-device": {},
+            "cdp-portid": {}
+          },
+          {
+            "number": 5,
+            "type": "established",
+            "first-time": "Sun Feb 22 04:42:20 2015",
+            "last-time": "Sun Feb 22 05:01:49 2015",
+            "client-mac": "30:8C:FB:5B:03:7F",
+            "client-manuf": "Unknown",
+            "channel": 11,
+            "maxseenrate": 5.5,
+            "packets": {
+              "LLC": 0,
+              "data": 0,
+              "crypt": 0,
+              "total": 433,
+              "fragments": 0,
+              "retries": 0
+            },
+            "snr-info": {
+              "last_signal_dbm": -77,
+              "last_noise_dbm": 0,
+              "last_signal_rssi": -77,
+              "last_noise_rssi": 0,
+              "min_signal_dbm": -77,
+              "min_noise_dbm": 0,
+              "min_signal_rssi": 1024,
+              "min_noise_rssi": 1024,
+              "max_signal_dbm": -77,
+              "max_noise_dbm": 0,
+              "max_signal_rssi": -77,
+              "max_noise_rssi": 0
+            },
+            "cdp-device": {},
+            "cdp-portid": {}
+          },
+          {
+            "number": 6,
+            "type": "established",
+            "first-time": "Sun Feb 22 04:41:59 2015",
+            "last-time": "Sun Feb 22 05:02:00 2015",
+            "client-mac": "C0:4A:00:1D:25:5F",
+            "client-manuf": "Unknown",
+            "channel": 11,
+            "maxseenrate": 1,
+            "packets": {
+              "LLC": 0,
+              "data": 0,
+              "crypt": 0,
+              "total": 38,
+              "fragments": 0,
+              "retries": 0
+            },
+            "snr-info": {
+              "last_signal_dbm": -49,
+              "last_noise_dbm": 0,
+              "last_signal_rssi": -49,
+              "last_noise_rssi": 0,
+              "min_signal_dbm": -49,
+              "min_noise_dbm": 0,
+              "min_signal_rssi": 1024,
+              "min_noise_rssi": 1024,
+              "max_signal_dbm": -49,
+              "max_noise_dbm": 0,
+              "max_signal_rssi": -49,
+              "max_noise_rssi": 0
+            },
+            "cdp-device": {},
+            "cdp-portid": {}
+          }
+        ],
+        "snr-info": {
+          "last_signal_dbm": -33,
+          "last_noise_dbm": 0,
+          "last_signal_rssi": -33,
+          "last_noise_rssi": 0,
+          "min_signal_dbm": -33,
+          "min_noise_dbm": 0,
+          "min_signal_rssi": 1024,
+          "min_noise_rssi": 1024,
+          "max_signal_dbm": -33,
+          "max_noise_dbm": 0,
+          "max_signal_rssi": -33,
+          "max_noise_rssi": 0
+        },
+        "bsstimestamp": 0,
+        "cdp-device": {},
+        "cdp-portid": {}
+      },
+      {
+        "number": 10,
+        "type": "infrastructure",
+        "first-time": "Sun Feb 22 04:41:55 2015",
+        "last-time": "Sun Feb 22 05:02:04 2015",
+        "SSID": {
+          "first-time": "Sun Feb 22 04:41:55 2015",
+          "last-time": "Sun Feb 22 05:02:04 2015",
+          "type": "Beacon",
+          "max-rate": 54,
+          "packets": 646,
+          "beaconrate": 10,
+          "encryption": "WPA2 AES-CCM",
+          "essid": {
+            "cloaked": false,
+            "$t": "D+C2"
+          }
+        },
+        "BSSID": "88:1F:A1:32:B6:A4",
+        "manuf": "Unknown",
+        "channel": 11,
+        "freqmhz": "2462 813",
+        "maxseenrate": 54000,
+        "packets": {
+          "LLC": 646,
+          "data": 100,
+          "crypt": 0,
+          "total": 813,
+          "fragments": 0,
+          "retries": 0
+        },
+        "datasize": 0,
+        "snr-info": {
+          "last_signal_dbm": -31,
+          "last_noise_dbm": 0,
+          "last_signal_rssi": -31,
+          "last_noise_rssi": 0,
+          "min_signal_dbm": -31,
+          "min_noise_dbm": 0,
+          "min_signal_rssi": 1024,
+          "min_noise_rssi": 1024,
+          "max_signal_dbm": -31,
+          "max_noise_dbm": 0,
+          "max_signal_rssi": -31,
+          "max_noise_rssi": 0
+        },
+        "bsstimestamp": 0,
+        "cdp-device": {},
+        "cdp-portid": {}
+      }
+    ]
+  }
+}

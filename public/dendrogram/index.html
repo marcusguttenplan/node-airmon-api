@@ -1,0 +1,224 @@
+<!doctype HTML>
+<html>
+
+<head>
+<title>Reality Versioning</title>
+<link type="text/css" rel="stylesheet" href="/assets/styles/styles.css">
+<style>
+body {
+  background-color: #2b2d38;
+  color: #FFF;
+}
+.node circle {
+  stroke: #2b2d38;
+  stroke-width: 1px;
+}
+.node {
+  fill: #fff;
+  font: 9px sans-serif;
+}
+.link {
+  fill: none;
+  stroke: #4f5264;
+  stroke-width: .6px;
+}
+.link.active {
+  stroke-width: 2px;
+}
+
+
+
+.node.network {
+  cursor: pointer;
+}
+  .node.network circle {
+    fill: #eb5e67;
+  }
+
+.node.client {
+}
+  .node.client circle {
+    fill: #f1f125;
+  }
+  .node.client text {
+    display: none;
+  }
+
+.node.probe {
+}
+  .node.probe circle {
+    fill: #58b8d3;
+  }
+
+
+header {
+  background-color: #2b2d38;
+  height: 10px;
+}
+#data {
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+  <header>
+      <h1>Reality Versioning</h1>
+  </header>
+
+  <div class="container">
+      <div id="data"></div>
+  </div>
+
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/libs/firebase.js"></script>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/assets/js/libs/d3fire.js"></script>
+
+  <script>
+  function createVisual(data) {
+      var diameter = 960;
+
+      var tree = d3.layout.tree()
+          .size([360, diameter / 2 - 120])
+          .separation(function(a, b) {
+              return (a.parent == b.parent ? 1 : 2) / a.depth;
+          });
+
+      var diagonal = d3.svg.diagonal.radial()
+          .projection(function(d) {
+              return [d.y, d.x / 180 * Math.PI];
+          });
+
+      var svg = d3.select("#data").append("svg")
+          .attr("width", diameter)
+          .attr("height", diameter)
+          .append("g")
+          .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+
+
+      var nodes = tree.nodes(data),
+          links = tree.links(nodes);
+
+          var link = svg.selectAll(".link")
+              .data(links)
+              .enter().append("path")
+              .attr("class", "link")
+              .attr("data-id", function(d) {
+                if (d.source.name === "Probe") {
+                  return;
+                } else if (d.children === undefined) {
+                  var id = d.source['BSSID'].replace(/:/g,'-');
+                  return id;
+                } else if (d.children) {
+                  var id = d.source['BSSID'].replace(/:/g,'-');
+                  return id;
+                }
+              })
+              .attr("d", diagonal);
+
+          var node = svg.selectAll(".node")
+              .data(nodes)
+              .enter().append("g")
+              .attr("class", function(d) {
+                if (d.name === "Probe") {
+                  return "node probe";
+                } else if (d.children === undefined) {
+                  return "node client";
+                } else if (d.children) {
+                  return "node network";
+                }
+              })
+              .attr("data-id", function(d) {
+                if (d.name === "Probe") {
+                  return;
+                } else if (d.children === undefined) {
+                  var id = d.parent['BSSID'].replace(/:/g,'-');
+                  return id;
+                } else if (d.children) {
+                  var id = d['BSSID'].replace(/:/g,'-');
+                  return id;
+                }
+              })
+              .attr("transform", function(d) {
+                  return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")";
+              })
+
+          node.append("circle")
+              .attr("r", function(d) {
+                if (d.name === "Probe") {
+                  return '5';
+                } else if (d.children === undefined) {
+                  return '2.5'
+                } else if (d.children) {
+                  return '4'
+                }
+              })
+
+          node.append("text")
+              .attr("dy", ".31em")
+              .attr("text-anchor", function(d) {
+                  return d.x < 180 ? "start" : "end";
+              })
+              .attr("transform", function(d) {
+                  return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)";
+              })
+              .text(function(d) {
+                  return d.name;
+              });
+
+
+      //d3.json("/assets/js/data/static2.json", function(error, root) {
+      //     var nodes = tree.nodes(root),
+      //         links = tree.links(nodes);
+
+      // });
+
+      d3.select(self.frameElement).style("height", diameter - 150 + "px");
+    }
+  </script>
+
+  <script>
+  $(document).ready(function() {
+      $('body').css({
+          'overflow': 'scroll'
+      });
+      $('body').height($('#data svg').height() + 25);
+
+      $('body').on('mouseover', '.node.network', function() {
+        var id = $(this).attr('data-id');
+
+        var clients = $('.node.client[data-id=' + id +']');
+        clients.children('text').fadeIn();;
+      });
+
+      $('body').on('mouseout', '.node.network', function() {
+        var id = $(this).attr('data-id');
+
+        var clients = $('.node.client[data-id=' + id +']');
+        clients.children('text').fadeOut();;
+      });
+
+
+
+      var firebase = new Firebase('https://reality-versioning.firebaseio.com/data');
+
+      firebase.once('value', function(childSnapshot) {
+        var data = childSnapshot.val();
+        createVisual(data);
+      });
+
+      firebase.on('value', function(childSnapshot, prevChildName) {
+        var data = childSnapshot.val();
+        console.log(data);
+      });
+
+
+  });
+  </script>
+
+</body>
+
+</html>

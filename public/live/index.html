@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reality Versioning</title>
+  <link type="text/css" rel="stylesheet" href="../assets/styles/styles.css">
+
+  <script src="//use.typekit.net/kim5pci.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body data-active="maps">
+
+  <header>
+    <div class="wrap clearfix">
+      <!--<h1>Reality Versioning</h1>-->
+      <a href="#" id="btn-add-node" class="button">+ node</a>
+      <a href="#" id="btn-remove-node" class="button button-alt">- node</a>
+
+      <nav class="nav-views">
+        <ul>
+          <li><a href="../" class="nav-views_start">Start</a></li>
+          <li class="sep">/</li>
+          <li><a href="#" class="nav-views_networks active">Live</a></li>
+          <li class="sep">/</li>
+          <li><a href="../about" class="nav-views_maps">About</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <div class="container" data-active="maps">
+
+    <div id="data" class="subview subview-networks" style="display:none;"></div>
+    <div class="subview subview-maps">
+      <div id="street-view"></div>
+      <div id="satellite-view"></div>
+    </div>
+
+  </div>
+
+
+<div class="modal-view" style="display: none;">
+  <div class="modal-content modal-network">
+    <a class="modal-close">close</a>
+    <div class="modal-mast">
+      <span class="network-bssid">30:46:9A:55:B2:D2</span>
+      <div class="network-signal">
+        <span class="bar-1"></span>
+        <span class="bar-2"></span>
+        <span class="bar-3"></span>
+        <span class="bar-4"></span>
+      </div>
+      <span class="network-enc">WPA2 AES-CCM</span>
+      <h2 class="network-name">Network Name</h2>
+    </div>
+
+    <ul class="modal-client-list">
+      <li>
+        <div class="client-mac">30:46:9A:55:B2:D2</div>
+      </li>
+    </ul>
+    
+    
+  </div>
+  <div class="modal-overlay"></div>
+</div>
+  
+  
+  
+  <script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+
+  <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="js/plugins.js"></script>
+</body>
+</html>

@@ -6,6 +6,8 @@ Web app and user interface for live wifi sniffing built on beaglebone black with
 
 View live at [tag.impractic.al](http://tag.impractic.al/live)
 
+![screencap](http://blackhole.impractic.al/down/rv.png)
+
 ## Requirements
 * NodeJS
 
